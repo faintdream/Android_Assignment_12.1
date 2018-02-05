@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="SETTINGS"/>
+
+    <EditTextPreference
+        android:key="passwordETP"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Password"
+        android:summary="@string/password_summary"/>
+
+    <PreferenceCategory android:title="SECURITY SETTINGS" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="screenLockCB"
+        android:title="Screen Lock"
+        android:summary="@string/screen_summary"/>
+    <EditTextPreference
+        android:key="reminderETP"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Reminder for Updation"
+        android:summary="@string/reminder_summary"/>
+
+
+</PreferenceScreen>
